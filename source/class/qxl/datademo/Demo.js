@@ -65,7 +65,7 @@ qx.Class.define("qxl.datademo.Demo", {
       controller.setIconPath("user.profile_image_url");
 
       // fetch some data from identi.ca
-      var url = "qxc/application/datademo/service.js";
+      var url = "qxl/datademo/service.js";
       var store = new qx.data.store.Jsonp();
       store.setCallbackName("callback");
       store.setUrl(url);

@@ -1,0 +1,32 @@
+{
+   "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/resource/schema/v1/compile.json",
+   "environment": {
+    "qx.icontheme": "Tango"
+   },
+	"applications": [
+		{
+			"class": "qxl.datademo.Application",
+			"theme": "qx.theme.Modern",
+			"name": "datademo",
+			"title": "Qooxdoo Data Demo"
+		}
+	],
+	/** Targets */
+	"targets": [
+		{
+			"type": "source",
+			"outputPath": "compiled/source"
+		},
+		{
+			"type": "build",
+			"outputPath": "compiled/build"
+		}
+	],
+	"defaultTarget": "source",
+	"locales": [
+		"en"
+	],
+	"serve": {
+	   "listenPort": 8080
+	}
+}

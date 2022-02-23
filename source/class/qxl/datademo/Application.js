@@ -16,19 +16,16 @@
 
 ************************************************************************ */
 
-qx.Class.define("qxl.datademo.Application",
-{
-  extend : qx.application.Standalone,
+qx.Class.define("qxl.datademo.Application", {
+  extend: qx.application.Standalone,
 
-  members :
-  {
-    __items : null,
+  members: {
+    __items: null,
 
-    main : function()
-    {
-      this.base(arguments);
+    main() {
+      super.main();
 
       this.getRoot().add(new qxl.datademo.Demo());
-    }
-  }
+    },
+  },
 });
